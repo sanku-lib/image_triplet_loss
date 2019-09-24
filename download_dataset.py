@@ -8,7 +8,7 @@ data_directory = './data_repository'
 
 if not os.path.exists(data_directory):
     try:
-        os.makedir(data_directory)
+        os.makedirs(data_directory)
         print(data_directory," created successfully.")
     except:
         print("Unable to create directory at ",data_directory," Please create ",data_directory," manually. Then run this file again.")
