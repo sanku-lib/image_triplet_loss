@@ -4,6 +4,14 @@ from zipfile import ZipFile
 
 dataset_url = "http://aws-proserve-data-science.s3.amazonaws.com/geological_similarity.zip"
 filePath = './data_repository/geological_similarity.zip'
+data_directory = './data_repository'
+
+if not os.path.exists(directory):
+    try:
+        os.makedir(directory)
+        print(data_directory," created successfully.")
+    except:
+        print("Unable to create directory at ",data_directory," Please create ",data_directory," manually. Then run this file again.")
 
 if os.path.exists(filePath):
     os.remove(filePath)
