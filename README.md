@@ -25,13 +25,11 @@ python download_dataset.py
 python train_triplets.py 
 ```
 ## Prediction
-Either run predict.py
-```bash
-python predict.py 
+
+Run Prediction.ipynb using Jupyter notebook to look into Prediction code.  
 ```
-Or
-Run the Notebook version of that using Jupyter: 
 Prediction.ipynb
+```
 
 
 
